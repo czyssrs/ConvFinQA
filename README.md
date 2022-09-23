@@ -16,8 +16,9 @@ General fields for all data:
 "post_text": the text after the table;
 "table": the table;
 "id": unique example id. 
-
+```
 The "annotation" field contains the major information for the conversations. If the conversation is the Type I simple conversation, i.e., the decomposition from one FinQA question, then we have the following fields for "annotation" fields:
+```
 "annotation": {
   "original_program": original FinQA question;
   "dialogue_break": the conversation, as a list of question turns. 
@@ -25,11 +26,11 @@ The "annotation" field contains the major information for the conversations. If 
   "qa_split": this field indicates the source of each question turn - 0 if from the decomposition of the first FinQA question, 1 if from the second. For the Type I simple conversations, this field is all 0s. 
   "exe_ans_list": the execution results of each question turn. 
 }
+```
 Apart from "annotation" field, we also have the "qa" field for the original FinQA question. 
 
 If the conversation is the Type II complex conversation, i.e., the decomposition from two FinQA questions, then "qa_split" field will have set of 0s first (turns from the first FinQA question), then followed by 1s (turns from the second FinQA question). We will also two fields "original_program_0" and "original_program_1" for the two original FinQA questions. 
 Apart from "annotation" field, We have the "qa_0" and "qa_1" fields for the original two FinQA questions. 
-```
 
 
 The following three files have entries for each conversation turn:
