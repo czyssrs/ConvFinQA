@@ -2,7 +2,9 @@
 The ConvFinQA dataset and code from EMNLP 2022 paper: CONVFINQA: Exploring the Chain of Numerical Reasoning in Conversational Finance Question Answering
 
 ## Dataset
-We release the datasets in two sets of files. The following three files have entries for each full conversation:
+We release the datasets in two sets of files - one for conversation level and the other for turn-level.
+### Conversation level 
+The following three files have entries for each full conversation:
 ```
 train.json (3,037 examples)
 dev.json (421 examples)
@@ -32,7 +34,7 @@ Apart from "annotation" field, we also have the "qa" field for the original FinQ
 If the conversation is the Type II complex conversation, i.e., the decomposition from two FinQA questions, then "qa_split" field will have set of 0s first (turns from the first FinQA question), then followed by 1s (turns from the second FinQA question). We will also two fields "original_program_0" and "original_program_1" for the two original FinQA questions. 
 Apart from "annotation" field, We have the "qa_0" and "qa_1" fields for the original two FinQA questions. 
 
-
+### Turn level 
 The following three files have entries for each conversation turn:
 ```
 train_turn.json (11,104 examples)
