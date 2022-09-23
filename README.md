@@ -2,7 +2,7 @@
 The ConvFinQA dataset and code from EMNLP 2022 paper: CONVFINQA: Exploring the Chain of Numerical Reasoning in Conversational Finance Question Answering
 
 ## Dataset
-We release the datasets in two sets of files - one for conversation level and the other for turn-level.
+We release the datasets in two formats - one for conversation level and the other for turn-level.
 ### Conversation level 
 The following three files have entries for each full conversation:
 ```
