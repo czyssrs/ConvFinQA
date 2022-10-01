@@ -5,17 +5,17 @@ class parameters():
     prog_name = "retriever"
 
     # set up your own path here
-    root_path = "/mnt/george_bhd/zhiyuchen/FinDial/"
-    output_path = "/mnt/george_bhd/zhiyuchen/findial_output/"
-    cache_dir = "/mnt/george_bhd/zhiyuchen/misc_cache/"
+    root_path = "your project path"
+    output_path = "your output path"
+    cache_dir = "path to store downloaded models"
 
     # the name of your result folder.
     model_save_name = "retriever-roberta-large-2e-5-new-test"
 
-    train_file = root_path + "data/raw/final/train_turn.json"
-    valid_file = root_path + "data/raw/final/dev_turn.json"
-
-    test_file = root_path + "data/raw/final/test_turn.json"
+    # use "train_turn.json", "dev_turn.json", and "test_turn.json"
+    train_file = root_path + "data/train_turn.json"
+    valid_file = root_path + "data/dev_turn.json"
+    test_file = root_path + "data/test_turn.json"
 
     op_list_file = "operation_list.txt"
     const_list_file = "constant_list.txt"
@@ -27,7 +27,7 @@ class parameters():
     pretrained_model = "roberta"
     model_size = "roberta-large"
 
-    # train or test
+    # mode: train or test
     device = "cuda"
     mode = "test"
     resume_model_path = ""
