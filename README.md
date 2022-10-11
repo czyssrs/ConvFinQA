@@ -1,5 +1,6 @@
 # ConvFinQA
 The ConvFinQA dataset and code from EMNLP 2022 paper: CONVFINQA: Exploring the Chain of Numerical Reasoning in Conversational Finance Question Answering
+<https://arxiv.org/abs/2210.03849>
 
 ## Requirements:
 
