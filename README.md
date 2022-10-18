@@ -90,7 +90,9 @@ To train the program generator in the next step, we need to get the retriever in
 Go to folder "finqanet_generator".
 
 #### Train
-First we need to convert the results from the retriever to the files used for training. Edit the main entry in Convert.py to set the file paths to the retriever results path you specified in the previous step - for all 3 train, dev, and test files. Then run:
+First we need to convert the results from the retriever to the files used for training. Edit the main entry in Convert.py to set the file paths to the retriever results path you specified in the previous step - for all 3 train, dev, and test files. To convert the training data, use the convert_train function; to convert dev and test file, use the convert_test file. 
+
+Then run:
 
 ```
 python Convert.py
