@@ -277,18 +277,17 @@ if __name__ == '__main__':
     ### convert the results from the retriever. 
     ### json_in is the inference result file generated from the retriever. Edit the paths here. 
 
+    # train set
     json_in = root + "findial_output/inference_only_20220507222037_retriever-roberta-large-2e-5-new-train/results/test/predictions.json"
     json_out = root + "FinDial/data/train_retrieve.json"
     convert_train(json_in, json_out, topn=3, max_len=290)
 
+    # dev set
     json_in = root + "findial_output/inference_only_20220507222113_retriever-roberta-large-2e-5-new-dev/results/test/predictions.json"
     json_out = root + "FinDial/data/dev_retrieve.json"
     convert_test(json_in, json_out, topn=3, max_len=290)
 
+    # test set
     json_in = root + "findial_output/inference_only_20220507222340_retriever-roberta-large-2e-5-new-test/results/test/predictions.json"
     json_out = root + "FinDial/data/test_retrieve.json"
     convert_test(json_in, json_out, topn=3, max_len=290)
-
-    # json_in = root + "outputs/inference_only_20210505220955_retriever-bert-base-7k-test-new/results/test/predictions.json"
-    # json_out = root + "FinQA/dataset/test_retrieve_7k_text_only.json"
-    # convert_test_infer(json_in, json_out, topn=3, mode="text")
