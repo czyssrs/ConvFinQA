@@ -60,6 +60,35 @@ Apart from all the fields mentioned above, we have the following additional fiel
 "gold_ind": the set of supporting facts. 
 ```
 
+## Leaderboard
+For test set release, we only provide the input report and the conversations. To test the performance on test set, please submit your results to [Codalab](https://codalab.lisn.upsaclay.fr/competitions/8582
+
+Prepare your prediction file into the following format, as a list of dictionaries, each dictionary contains two fields: the example id and the predicted program. The predicted program is a list of predicted program tokens with the 'EOF' as the last token. For example:
+```
+[
+    {
+        "id": "ETR/2016/page_23.pdf-2",
+        "predicted": [
+            "subtract(",
+            "5829",
+            "5735",
+            ")",
+            "EOF"
+        ]
+    },
+    {
+        "id": "INTC/2015/page_41.pdf-4",
+        "predicted": [
+            "divide(",
+            "8.1",
+            "56.0",
+            ")",
+            "EOF"
+        ]
+    },
+    ...
+]
+```
 
 ## Code
 
